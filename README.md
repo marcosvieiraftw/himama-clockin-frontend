@@ -34,7 +34,8 @@ To run locally:</br>
 * Functional components + React hooks as much as possible to avoid creating Class components everywhere.
 * Beautiful style following HiMama's design patterns.
 * It is a small application but it was organized in the way it can grow as much as needed. No cyclic dependency between components.
-* .env file configured to make deploys easier.</br>
+* .env file configured to make deploys easier.
+* Table fully configured to use Backend pagination for more performance. </br>
 
 ## Questions
 * How did you approach this challenge?</br>
