@@ -1,68 +1,63 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Clock In / Out
 
-In the project directory, you can run:
+HiMama ClockIn/Out frontend application responsible for managing UI/UX attributes.
 
-### `yarn start`
+## Instructions
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Access via cloud by heroku:
+1: Access the frontend application: [Frontend](https://himama-clockin-frontend.herokuapp.com/)
+2: Login with one of the seeded accounts:
+email: <b>marcos@marcos.com</b>
+password: <b>123</b>
+<i>Or</i>
+email: <b>himama@himama.com</b>
+password: <b>123</b>
+<i>*Each user can only see their registers, so I seeded two accounts to test the data visibility accross access.</i>
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
 
-### `yarn test`
+To run locally:
+1: Clone project
+2: go to the project folder and run `npm i`
+3: After the install of all dependencies, run `yarn start`
+4: Your browser will open automatically on [http://localhost:3000](http://localhost:3000)
+<i>* The server will be running in development mode.</i>
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Key features
+* React + Redux managing application state.
+* Barrel architecture: [A quick overview](https://hackernoon.com/react-project-architecture-using-barrels-d086146eb0f6)
+* Fully modular with Layouts, Common components, Views, Helpers, Stores and Theme configurations (Typhografy, Color Pallete and so on)
+* Http communication through Axios + JWT Authorization.
+* UI validations with friendly visual components reproducing API validation messages.
+* What you see is what you get: You can't submit a form if there's an invalid field. The user has visual confirmation by enabling/disabling buttons.
+* Requests + Business inside stores = Skinny components responsible only for managing the UI artifacts.
+* Functional components + React hooks as much as possible to avoid creating Class components everywhere.
+* Beautiful style following HiMama's design patterns.
+* It is a small application but it was organized in the way it can grow as much as needed. No cyclic dependency between components.
+* .env file configured to make deploys easier.
 
-### `yarn build`
+## Questions
+* How did you approach this challenge?
+I started by reading the requirements over and over to not make assumptions. Once I understood the requirements I went to HiMama website to gather all visual identity: Colors, Components, Common approaches. With all in hand, I draw the screens in a draft paper to think about the best usability/experience.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* What schema design did you choose and why?
+I chose React as Javascript framework because it's more common for HiMama developer team - thinking about future evolution. I first developed the whole visual structure and then I just fit the legos(Components).
+For backend, I chose Ruby On Rails API Only + Postgres to quickly develop the endpoints and its constraints. I also dockerized the whole backend to make easier to run in all developers machines (Works not only on my machine :D ) - further information about backend and approach can be accessed here on its [Repository](https://github.com/marcosvieiraftw/himama-clockin-api)
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+* If you were given another day to work on this, how would you spend it?
+<b>Frontend</b>
+1: Refine the interface by adding some visual resources.
+2: Refine the frontend code by adding PropTypes to all components.
+3: Implement automated tests.
+4: Evolve the protection of the routes to avoid the blink effect.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   <b>Backend</b>
+   1: Create an admin namespace to administrate all users registers.
 
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+* What if you were given a month?
+1: Implement super admin access.
+2: Implement an analytical module to retrieve reports from all users.
+3: Implement an hour bank feature according to the country work laws.
+4: Implement card components based on days instead of a table with all events.
+5: Improve constraints.
+6: Gather the needs/requirements by talking to the future users to plan the next sprint/month of work.
