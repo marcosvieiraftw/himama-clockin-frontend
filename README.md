@@ -5,23 +5,23 @@ HiMama ClockIn/Out frontend application responsible for managing UI/UX attribute
 
 ## Instructions
 
-Access via cloud by heroku:
-1: Access the frontend application: [Frontend](https://himama-clockin-frontend.herokuapp.com/)
-2: Login with one of the seeded accounts:
-email: <b>marcos@marcos.com</b>
-password: <b>123</b>
-<i>Or</i>
-email: <b>himama@himama.com</b>
-password: <b>123</b>
-<i>*Each user can only see their registers, so I seeded two accounts to test the data visibility accross access.</i>
+Access via cloud by heroku:</br>
+1: Access the frontend application: [Frontend](https://himama-clockin-frontend.herokuapp.com/)</br>
+2: Login with one of the seeded accounts:</br>
+email: <b>marcos@marcos.com</b></br>
+password: <b>123</b></br>
+<i>Or</i></br>
+email: <b>himama@himama.com</b></br>
+password: <b>123</b></br>
+<i>*Each user can only see their registers, so I seeded two accounts to test the data visibility accross access.</i></br></br>
 
 
-To run locally:
-1: Clone project
-2: go to the project folder and run `npm i`
-3: After the install of all dependencies, run `yarn start`
-4: Your browser will open automatically on [http://localhost:3000](http://localhost:3000)
-<i>* The server will be running in development mode.</i>
+To run locally:</br>
+1: Clone project</br>
+2: go to the project folder and run `npm i`</br>
+3: After the install of all dependencies, run `yarn start`</br>
+4: Your browser will open automatically on [http://localhost:3000](http://localhost:3000)</br>
+<i>* The server will be running in development mode.</i></br></br>
 
 ## Key features
 * React + Redux managing application state.
@@ -34,30 +34,30 @@ To run locally:
 * Functional components + React hooks as much as possible to avoid creating Class components everywhere.
 * Beautiful style following HiMama's design patterns.
 * It is a small application but it was organized in the way it can grow as much as needed. No cyclic dependency between components.
-* .env file configured to make deploys easier.
+* .env file configured to make deploys easier.</br>
 
 ## Questions
-* How did you approach this challenge?
-I started by reading the requirements over and over to not make assumptions. Once I understood the requirements I went to HiMama website to gather all visual identity: Colors, Components, Common approaches. With all in hand, I draw the screens in a draft paper to think about the best usability/experience.
+* How did you approach this challenge?</br>
+I started by reading the requirements over and over to not make assumptions. Once I understood the requirements I went to HiMama website to gather all visual identity: Colors, Components, Common approaches. With all in hand, I draw the screens in a draft paper to think about the best usability/experience.</br></br>
 
-* What schema design did you choose and why?
+* What schema design did you choose and why?</br>
 I chose React as Javascript framework because it's more common for HiMama developer team - thinking about future evolution. I first developed the whole visual structure and then I just fit the legos(Components).
-For backend, I chose Ruby On Rails API Only + Postgres to quickly develop the endpoints and its constraints. I also dockerized the whole backend to make easier to run in all developers machines (Works not only on my machine :D ) - further information about backend and approach can be accessed here on its [Repository](https://github.com/marcosvieiraftw/himama-clockin-api)
+For backend, I chose Ruby On Rails API Only + Postgres to quickly develop the endpoints and its constraints. I also dockerized the whole backend to make easier to run in all developers machines (Works not only on my machine :D ) - further information about backend and approach can be accessed here on its [Repository](https://github.com/marcosvieiraftw/himama-clockin-api)</br></br>
 
-* If you were given another day to work on this, how would you spend it?
-<b>Frontend</b>
-1: Refine the interface by adding some visual resources.
-2: Refine the frontend code by adding PropTypes to all components.
-3: Implement automated tests.
-4: Evolve the protection of the routes to avoid the blink effect.
+* If you were given another day to work on this, how would you spend it?</br>
+<b>Frontend</b></br>
+1: Refine the interface by adding some visual resources.</br>
+2: Refine the frontend code by adding PropTypes to all components.</br>
+3: Implement automated tests.</br>
+4: Evolve the protection of the routes to avoid the blink effect.</br>
 
-   <b>Backend</b>
-   1: Create an admin namespace to administrate all users registers.
+    <b>Backend</b></br>
+    1: Create an admin namespace to administrate all users registers.</br></br>
 
-* What if you were given a month?
-1: Implement super admin access.
-2: Implement an analytical module to retrieve reports from all users.
-3: Implement an hour bank feature according to the country work laws.
-4: Implement card components based on days instead of a table with all events.
-5: Improve constraints.
-6: Gather the needs/requirements by talking to the future users to plan the next sprint/month of work.
+* What if you were given a month?</br>
+1: Implement super admin access.</br>
+2: Implement an analytical module to retrieve reports from all users.</br>
+3: Implement an hour bank feature according to the country work laws.</br>
+4: Implement card components based on days instead of a table with all events.</br>
+5: Improve constraints.</br>
+6: Gather the needs/requirements by talking to the future users to plan the next sprint/month of work.</br>
