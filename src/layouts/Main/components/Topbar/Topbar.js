@@ -46,7 +46,7 @@ const Topbar = props => {
       color="white"
     >
       <Toolbar>
-        <RouterLink to="/">
+        <RouterLink to="/home">
           <img
             alt="Logo"
             src="/images/logo_header.png"
